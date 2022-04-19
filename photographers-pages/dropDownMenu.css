@@ -15,10 +15,10 @@
         color: #fff;
         left: 8.5rem;
         position: absolute;
-        top: 1.55rem;
+        top: 0.7em;
     }
 
-    .hidden-sort li {
+    .hidden-sort button {
         background: #901c1c;
         color: #fff;
         font-size: 1.2rem;
@@ -67,14 +67,18 @@
         z-index: 10;
     }
 
-    ul.hidden-sort li:hover {
+    ul.hidden-sort button:hover {
         background-color: #651414;
         cursor: pointer;
     }
 
-    ul.hidden-sort li:nth-child(1) {
+    button {
         align-items: center;
         display: flex;
         justify-content: space-between;
+        border-radius: 5px;
+        width: 10em;
+        border: none;
+        height: 2.5em;
     }
 }

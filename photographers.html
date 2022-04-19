@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script type='module' src="js/main.js"></script>
+    <script src="js/filtertab.js"></script>
 </head>
 
 <body>
@@ -32,10 +33,10 @@
                 <button class="sort-btn" aria-haspopup="listbox">Popularité</button>
                 <span class="fas fa-chevron-down arrow-down-open" role='button'></span>
                 <ul class="hidden-sort" role="listbox">
-                    <li class="sort" role='option'>Popularité <span class="fas fa-chevron-up arrow-up-close"></span>
-                    </li>
-                    <li class="sort" role='option'>Date</li>
-                    <li class="sort" role='option'>Tître</li>
+                    <button role='button' tabindex="0" class="sort" role='option'>Popularité <span class="fas fa-chevron-up arrow-up-close"></span>
+                    </button>
+                    <button tabindex="0" class="sort" id="myfilter" role='option'>Date</button>
+                    <button tabindex="0" class="sort" role='option'>Tître</button>
                 </ul>
             </div>
         </div>
